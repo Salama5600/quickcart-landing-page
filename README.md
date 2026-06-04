@@ -1,43 +1,49 @@
-# Grocery Delivery Landing Page
+# FreshCart — Grocery Delivery Platform
 
-A premium, modern, and fully responsive single-page landing website for a grocery and daily essentials delivery platform.
+A production-ready React e-commerce frontend for fast grocery delivery, built on the original FreshCart landing page design.
 
-## 🚀 Features
+## Features
 
-- Modern startup-style UI/UX design
-- Fully responsive (mobile, tablet, desktop)
-- Smooth scrolling navigation
-- Sticky navbar with active link highlighting
-- Scroll animations (fade/slide effects)
-- Clean and optimized code structure
-- Fast performance with Vanilla JavaScript
+- Multi-page routing (Home, Products, Product Details, Categories, Cart, Auth, Contact, 404)
+- Shopping cart with quantity controls and order summary
+- Category pages with filtering and sorting
+- SEO meta tags, Open Graph, Twitter cards, and JSON-LD structured data
+- Lazy-loaded routes, skeleton loaders, scroll reveal, and page transitions
+- Social proof, animated stats, FAQ accordion, and newsletter signup
 
-## 🧩 Sections Included
+## Getting Started
 
-- Hero Section
-- About / Service Explanation
-- How It Works
-- Categories
-- Why Choose Us
-- Trust / Statistics
-- Call To Action (CTA)
-- Footer
+```bash
+npm install
+npm run dev
+```
 
-## 🛠 Tech Stack
+Open [http://localhost:5173](http://localhost:5173).
 
-- HTML5
-- CSS3 (Flexbox + Grid)
-- Vanilla JavaScript (ES6+)
+## Build
 
-## 📱 Responsive Design
+```bash
+npm run build
+npm run preview
+```
 
-Fully optimized for:
-- Mobile devices
-- Tablets
-- Desktop screens
+## Tech Stack
 
-## 🎯 Goal
+- React 18 + Vite
+- React Router 6
+- Framer Motion
+- react-helmet-async
 
-To deliver a startup-quality landing page that is visually appealing, user-friendly, and focused on conversions.
+## Project Structure
 
-## 📂 Project Structure
+```
+src/
+  components/   # Reusable UI, layout, home sections
+  context/      # Cart state
+  data/         # Products, categories, FAQ, testimonials
+  hooks/        # Scroll reveal, animated counters
+  pages/        # Route pages
+  styles/       # Global CSS (original design system + extensions)
+```
+
+Legacy static files (`style.css`, `script.js` in project root) are preserved for reference; the app uses `src/styles/index.css`.
